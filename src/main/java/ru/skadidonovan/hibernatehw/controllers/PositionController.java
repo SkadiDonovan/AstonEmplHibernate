@@ -3,13 +3,10 @@ package ru.skadidonovan.hibernatehw.controllers;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
-import ru.skadidonovan.hibernatehw.dao.PositionDAO;
 import ru.skadidonovan.hibernatehw.models.Employee;
 import ru.skadidonovan.hibernatehw.models.Position;
-import ru.skadidonovan.hibernatehw.services.EmployeeService;
-import ru.skadidonovan.hibernatehw.services.PositionService;
+import ru.skadidonovan.hibernatehw.services.impl.PositionService;
 
 import java.util.List;
 

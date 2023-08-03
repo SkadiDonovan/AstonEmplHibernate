@@ -1,4 +1,4 @@
-package ru.skadidonovan.hibernatehw.services;
+package ru.skadidonovan.hibernatehw.services.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -10,6 +10,7 @@ import ru.skadidonovan.hibernatehw.models.Position;
 import java.util.List;
 
 @Service
+@Transactional(readOnly = true)
 public class PositionService {
     private final PositionDAO positionDAO;
 
@@ -27,16 +28,19 @@ public class PositionService {
         return positionDAO.getOne(id);
     }
 
+    @Transactional
     public boolean save(Position position) {
         positionDAO.save(position);
         return true;
     }
 
-    public boolean update(long id, Position position) {
+    @Transactional
+    public boolean update(Long id, Position position) {
         return positionDAO.update(id, position);
     }
 
-    public boolean delete(long id) {
+    @Transactional
+    public boolean delete(Long id) {
         return positionDAO.delete(id);
     }
 

@@ -4,11 +4,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import ru.skadidonovan.hibernatehw.dao.ProjectDAO;
 import ru.skadidonovan.hibernatehw.models.Employee;
 import ru.skadidonovan.hibernatehw.models.Project;
-import ru.skadidonovan.hibernatehw.services.EmployeeService;
-import ru.skadidonovan.hibernatehw.services.ProjectService;
+import ru.skadidonovan.hibernatehw.services.impl.ProjectService;
 
 import java.util.List;
 

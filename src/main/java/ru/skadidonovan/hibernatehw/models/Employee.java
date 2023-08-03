@@ -9,6 +9,7 @@ import com.fasterxml.jackson.annotation.ObjectIdGenerators;
 import jakarta.persistence.*;
 import lombok.*;
 import org.hibernate.annotations.Cascade;
+import org.hibernate.annotations.Fetch;
 
 import java.util.List;
 
@@ -33,6 +34,7 @@ public class Employee {
     @Column(name = "last_name")
     private String lastName;
 
+    
     @ManyToOne(cascade = CascadeType.PERSIST)
     @JoinColumn(name = "position_id", referencedColumnName = "id")
     private Position position;
