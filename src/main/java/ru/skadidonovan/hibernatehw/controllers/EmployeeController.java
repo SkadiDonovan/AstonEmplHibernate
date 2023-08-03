@@ -6,8 +6,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import ru.skadidonovan.hibernatehw.models.Employee;
 import ru.skadidonovan.hibernatehw.models.Project;
-import ru.skadidonovan.hibernatehw.services.impl.EmployeeService;
-import ru.skadidonovan.hibernatehw.services.impl.ProjectService;
+import ru.skadidonovan.hibernatehw.services.EmployeeService;
+import ru.skadidonovan.hibernatehw.services.ProjectService;
+import ru.skadidonovan.hibernatehw.services.impl.ProjectServiceImpl;
 
 import java.util.List;
 

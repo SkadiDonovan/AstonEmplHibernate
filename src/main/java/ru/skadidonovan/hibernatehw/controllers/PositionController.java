@@ -6,7 +6,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import ru.skadidonovan.hibernatehw.models.Employee;
 import ru.skadidonovan.hibernatehw.models.Position;
-import ru.skadidonovan.hibernatehw.services.impl.PositionService;
+import ru.skadidonovan.hibernatehw.services.PositionService;
 
 import java.util.List;
 
